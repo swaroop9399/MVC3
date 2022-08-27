@@ -1,0 +1,38 @@
+﻿<h1>Register</h1>
+    <div class="first">
+        <form asp-action="Insert" method="post">
+            <label for="Name">Name</label><br>
+            <input type="text" placeholder="Name" name="Name" required>
+            <br>
+            <br>
+            <label for="E-mail">E-mail</label><br>
+            <input type="email" placeholder="E-mail" name="Email" required>
+            <br>
+            <br>
+            <label for="password">Password</label><br>
+            <input type="Password" placeholder="Password" name="Password" required>
+            <br><br>
+            
+            <p>Gender:</p>
+            <input type="radio" id="Male" name="Gender" value="Male" required>
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="Gender" value="Female" required>
+            <label for="Female">Female</label><br>
+            <br><br>
+
+            <label for="course">Choose a course:</label>
+            <select id="course" name="Course" required>
+            <option disabled selected> -- select an option -- </option>
+            <option value="Java">Java</option>
+            <option value="Js">Js</option>
+            <option value="C#">C#</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+            <option value="MVC">MVC</option>
+            </select>
+            <br><br>
+
+            <input type="checkbox" id="Terms & Conditions" name="isChecked">
+            <label for="Agree">I accept all Terms & Conditions</label><br><br>
+
+            <button type="submit">Register</button>
+        </form> 

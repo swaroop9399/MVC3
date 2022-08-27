@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Student>
+@{
+    ViewData["Title"] = "AllData";
+}
+
+
+    <table class="table table-striped">
+    <thead>
+        <tr>
+        <th>UID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>RegisterDate</th>
+        <th>UpdateDate</th>
+        <th>Edit</th>
+        <th>Delete</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var student in Model){
+            <tr id="@student.UID">
+                <td>@student.UID</td>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>@student.Password</td>
+                <td>@student.Gender</td>
+                <td>@student.Course</td>
+                <td>@student.RegisterDate</td>
+                <td>@student.UpdateDate</td>
+                <td><a href="" class="btn btn-primary">Edit</a></td>
+                <td><a href="" class="btn btn-danger">Delete</a></td>
+            </tr>
+        }
+    
+    </tbody>
+
+    </table>
